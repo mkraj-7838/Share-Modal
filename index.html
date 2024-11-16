@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share Modal | Mohit Prajapati</title>
+  <link rel="shortcut icon" href="./assets/Mohit_pot.webp" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    btn-follow:hover{
+      box-shadow: 0 0 50px #5648d8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./assets/Mohit_pot.webp" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Mohit Prajapati</h2>
+      </div>
+      <div class="designation">
+        <h3>Coder, Web-developer</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal1()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>Connect With Me</div>
+        </button>
+
+        <button onclick="openModal2()" class="btn-follow btn-card">Follow me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Connect & Follow</h1>
+      <div>
+        <i onclick="closeModal1()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+    <div>
+
+      <h3>Connect & Follow via</h3>
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/mohit-prajapati-285a53264/" target="_blank" class="icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/mkraj-7838" target="_blank" class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/_mohit__prajapati__/" target="_blank" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/Mkraj_official" target="_blank" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://t.me/The_mkraj" target="_blank" class="icon" id="telegram">
+          <i class="fa-brands fa-telegram" ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal2">
+    <div class="modal-header">
+      <h1>Connect & Follow</h1>
+      <div>
+        <i onclick="closeModal2()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+    <div>
+
+      <h3>Connect & Follow via</h3>
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/mohit-prajapati-285a53264/" target="_blank" class="icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/mkraj-7838" target="_blank" class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/_mohit__prajapati__/" target="_blank" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://x.com/Mkraj_official" target="_blank" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://t.me/The_mkraj" target="_blank" class="icon" id="telegram">
+          <i class="fa-brands fa-telegram" ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal1()"></div>
+
+  <div class="overlay" onclick="closeModal2()"></div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
